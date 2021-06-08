@@ -9,11 +9,38 @@ Please delete the terminal and GUI directories and update the yml file by your l
 
 - A well documented and useful README.md including
   - A description of your project
+  -   This is sudoku puzzle generator on a systems console. 
   - Dependency and installation instructions **excluding Geany, Git, Java, JavaFX, and ANSI/Unicode support**
+  -   To run the project, Geany and Java needs to be installed.
+  -   To install Geany:
+        Windows and Mac
+
+        Visit https://www.geany.org/download/releases/ (Links to an external site.) and select the installer for your platform
+        Linux
+
+        While the above should work, I prefer
+
+        sudo apt install geany yaru-theme-icon
+        
+       To install Java:
+       
+        Windows and Mac
+
+        Visit https://www.oracle.com/java/technologies/javase-jdk16-downloads.html (Links to an external site.) to download the             installer for your Operating System.
+        Linux
+
+        The above should work but I prefer running the following in a terminal:
+
+        sudo apt install openjdk-16-jdk
+        
   - Instructions on configuration and execution of your project
+  -     
   - Sample output (images appreciated)
+  - 
   - A description of your repository and overall software design 
+  - 
   - Citations, Challenges, and anything else you feel is relevant
+      I had challenge in identifying the recursive algorithm to create a sudoku puzzle. 
 - A functioning project with a working interface (terminal or graphical) that uses most of the following
   - Methods
   - If/Else 
@@ -21,7 +48,9 @@ Please delete the terminal and GUI directories and update the yml file by your l
   - Loops
   - Files
   - Try/Catch
+  -   Because sometimes the array runs into an error of running out of bounds, I use try and catch (arrayOutOfBounds)
   - Arrays
+  -   Created a 2 dimensional arrays output on the terminal.
   - Custom Objects and Inheritance
   - Switch
   - Enumerated types
