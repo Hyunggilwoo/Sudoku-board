@@ -4,11 +4,7 @@
 This is a sudoku puzzle that generates a puzzle scanned from a file. The user selects the difficulty of the puzzle from "easy", "medium", and "difficult" to play the sudoku puzzle. 
 
 Sudoku puzzle
-Algorithm
-  1. Select the difficulty of the sudoku puzzle from easy, medium, and difficult.
-  2. Scanner imports a sudoku text file into a 2 dimensional array.
-  3. User enters integer inside the array presented in the GUI.
-  4. Game completes when the user enters all of the input inside the grid
+
  
  ## Dependency and Installation Instructions
  This program reguires Java, JavaFX, Geany (IDE).
@@ -18,7 +14,15 @@ Algorithm
  ## Sample output (images appreciated)
 
 ### A description of your repository and overall software design
-
+Algorithm
+  1. Select the difficulty of the sudoku puzzle from easy, medium, and difficult.
+  2. Scanner imports a sudoku text file into a 2 dimensional array.
+  3. Present the 2 D array of text fields.
+  4. User enters integer inside the array presented in the GUI.
+  5. The user input is stored inside the text box.
+  6. If the user enters non integer, the text box changes color.
+  7. Game completes when the user enters all of the input inside the grid.
+  8. User innitiates whether to play the game again.
  
  ## Citations, Challenges.
  
