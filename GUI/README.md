@@ -40,6 +40,6 @@ java --module-path="/home/aveliz/javafx-sdk-16/lib" --add-modules="javafx.contro
 
 ### Geany: Configure Build Commands 
 
-javafxc: javac --module-path="/home/aveliz/javafx-sdk-16/lib" --add-modules="javafx.controls,javafx.media,javafx.fxml" "%f"
+javafxc: javac --module-path="/home/kodiak/Downloads/javafx-sdk-16/lib/" --add-modules="javafx.controls,javafx.media,javafx.fxml" "%f"
 
-javafx: java --module-path="/home/aveliz/javafx-sdk-16/lib" --add-modules="javafx.controls,javafx.media,javafx.fxml" "%e"
+javafx: java --module-path="/home/kodiak/Downloads/javafx-sdk-16/lib/" --add-modules="javafx.controls,javafx.media,javafx.fxml" "%e"
