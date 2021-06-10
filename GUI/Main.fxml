@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Demo">
+	<children>
+		<MenuBar prefHeight="34.0" prefWidth="1253.0" VBox.vgrow="NEVER">
+			<menus>
+				<Menu text="File">
+					<items>
+						<MenuItem onAction="#open" text="Open">
+							 <graphic>
+								<ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+									 <image>
+										<Image url="@open-iconic-master/png/folder-2x.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</MenuItem>
+						<MenuItem onAction="#save" text="Save">
+							<graphic>
+								<ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@open-iconic-master/png/file-2x.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</MenuItem>
+						<MenuItem onAction="#exit" text="Quit">
+							<graphic>
+								<ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@open-iconic-master/png/x-2x.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</MenuItem>
+					</items>
+				</Menu>
+				<Menu text="Help">
+					<items>
+						<MenuItem onAction="#browser" text="Help">
+							<graphic>
+								<ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@open-iconic-master/png/question-mark-2x.png" />
+									</image>
+									</ImageView>
+							</graphic>
+						</MenuItem>
+						<MenuItem onAction="#info" text="About">
+							<graphic>
+								<ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@open-iconic-master/png/info-2x.png" />
+										</image>
+									</ImageView>
+							</graphic>
+						</MenuItem>
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<AnchorPane maxHeight="-1" maxWidth="-1" prefHeight="476.0" prefWidth="737.0" VBox.vgrow="ALWAYS">
+			<children> <!-- Default RED is a little too bright -->
+				<Text layoutX="471.0" layoutY="38.0" text="Press ANY key:" wrappingWidth="97.15087890625" />
+				<Text fx:id="keytext" layoutX="400" layoutY="20" text="" />
+				<TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="38.0" layoutY="53.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="87.0" layoutY="53.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="137.0" layoutY="53.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="187.0" layoutY="53.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="237.0" layoutY="53.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="287.0" layoutY="53.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="337.0" layoutY="53.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="387.0" layoutY="53.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="38.0" layoutY="103.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="387.0" layoutY="103.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="337.0" layoutY="103.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="287.0" layoutY="103.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="237.0" layoutY="103.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+            <TextField accessibleRole="TABLE_CELL" accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" layoutX="187.0" layoutY="103.0" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+			</children>
+		</AnchorPane>
+      <TextField accessibleText="Enter text in this box and have the characters appear as they are typed." alignment="CENTER" onKeyTyped="#keyTyped" prefHeight="50.0" prefWidth="50.0" />
+	</children>
+</VBox>

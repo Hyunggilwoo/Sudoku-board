@@ -12,12 +12,12 @@ import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.*;
 import javafx.scene.input.*;
-import javafx.scene.layout.*;
+import javafx.scene.layout.*; //import layout.StackPane
 import javafx.scene.media.*;
-import javafx.scene.paint.*;
-import javafx.scene.shape.*;
-import javafx.scene.text.*;
-import javafx.stage.*;
+import javafx.scene.paint.*; // import paint.Color
+import javafx.scene.shape.*; // import shape.Rectangle, Circle
+import javafx.scene.text.*; // import text.Font, Text
+import javafx.stage.*; // Import stage.Stage
 import javafx.stage.FileChooser.*;
 import javafx.util.*;
 
@@ -132,9 +132,9 @@ public class Demo extends Application{
 	
 	@FXML
 	public void info(Event e){
-		Alert alert = new Alert(AlertType.INFORMATION, "This is demo code.");
+		Alert alert = new Alert(AlertType.INFORMATION, "This is Hyunggil's Sudoku generator.");
 		alert.setTitle("About");
-		alert.setHeaderText("Demo code");
+		alert.setHeaderText("Sudoku generator");
 		alert.show();
 	}
 	

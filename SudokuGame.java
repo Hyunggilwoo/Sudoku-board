@@ -54,22 +54,6 @@ public class SudokuGame{
 		
 		
 		}
-
-/*------------------------------------------------------------------------
- * Example of a method that prints the individual value from array
- */ 
-	String [][] mindBlown= {{"hello", "there"},{"my", "name", "is"},{"adrian"}};
-		
-		for(int i = 0;i<mindBlown.length;i++){
-			System.out.println(Arrays.toString(mindBlown[i]));
-		}
-		
-		for(int i = 0;i<mindBlown.length;i++){
-			for(int j= 0;j<mindBlown[i].length;j++){
-				System.out.println(mindBlown[i][j]);
-			}
-			System.out.println();
-		}
 		
 		
 		
@@ -106,22 +90,12 @@ public class SudokuGame{
 			playAgain = console.next();
 		} while(playAgain.equalsIgnoreCase("y"));
 	}
-	
-	// Returns the average of the grades.
-	public static double avg(String grades){
-		Scanner parseGrades = new Scanner(grades);
-		double sum = 0;
-		int num = 0;
-		while(parseGrades.hasNext()){
-			sum +=parseGrades.nextInt();
-			num++;
-		}
-		return sum / num;
-	}
 }
 /*Citation:
  * 	Inspiration of using an array to scan input.
  * https://www.tutorialspoint.com/How-to-read-data-from-scanner-to-an-array-in-java
+ * 	Inspiration of a code on creating a grid and checking for validity from Emory University Computer Scicne
+ * http://www.mathcs.emory.edu/~lxiong/cs170/share/code/chapter6/Sudoku.java.html
  * 
  *Files.java I incorporated the scanner object to output a file 2D array of sudoku file.
  */ 

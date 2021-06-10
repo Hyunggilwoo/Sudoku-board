@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -89,9 +90,9 @@
 				<Text accessibleText="Unicode symbol for a warm beverage like coffee." focusTraversable="true" layoutX="230" layoutY="125" style="-fx-font-size:45px" text="☕" /> <!-- https://stackoverflow.com/questions/49016202/using-unicode-characters-with-javafx -->
 				<Text accessibleText="Unicode symbol for a white queen." focusTraversable="true" layoutX="225" layoutY="175" style="-fx-font-size:45px" text="♕" /> <!-- https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html#:~:text=Inheritance%20%20%20%20Class%20%20%20,%20-fx-font%20%20%20Font.DEFAULT%20(12px%20system) -->
 				<Text accessibleText="Unicode symbol for the diamond suit, colored Brick Red." focusTraversable="true" layoutX="232" layoutY="225" style="-fx-font-size:45px;-fx-fill:FIREBRICK;" text="♦" /> <!-- Default RED is a little too bright -->
-				<Text layoutX="300" layoutY="20" text="Press ANY key:" />
+				<Text layoutX="471.0" layoutY="38.0" text="Press ANY key:" wrappingWidth="97.15087890625" />
 				<Text fx:id="keytext" layoutX="400" layoutY="20" text="" />
-				<TextField accessibleText="Enter text in this box and have the characters appear as they are typed." layoutX="300" layoutY="40" onKeyTyped="#keyTyped" />
+				<TextField accessibleText="Enter text in this box and have the characters appear as they are typed." layoutX="471.0" layoutY="47.0" onKeyTyped="#keyTyped" />
 				<Rectangle fx:id="rect" accessibleRole="IMAGE_VIEW" accessibleText="Dodger blue colored rectangle that changes to Indigo and back again when clicked." arcHeight="5" arcWidth="5" fill="#1f5eff" focusTraversable="true" height="80" layoutX="375" layoutY="155" onMouseClicked="#flip" stroke="BLACK" strokeType="INSIDE" width="80" />
 				<Circle fx:id="circle" accessibleRole="IMAGE_VIEW" accessibleText="Orchid colored circle that can be dragged around the window using the mouse." fill="#942290" focusTraversable="true" layoutX="335" layoutY="115" onMouseDragged="#move" radius="40" stroke="BLACK" strokeType="INSIDE" />
 				<Button fx:id="play" layoutX="325" layoutY="250" mnemonicParsing="false" onAction="#play" text="Start">
@@ -118,6 +119,7 @@
 						<Hyperlink accessibleText="via Wikimedia Commons" onAction="#hyper" text="via Wikimedia Commons" />
 					</children>
 				</TextFlow>
+            <TextArea layoutX="471.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0" />
 			</children>
 		</AnchorPane>
 	</children>
