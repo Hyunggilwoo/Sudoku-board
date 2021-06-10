@@ -1,37 +1,48 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=4823718&assignment_repo_type=AssignmentRepo)
-# FinalCS1
+# FinalCS1 Sudoku Puzzle
+
+This is a sudoku puzzle that generates a puzzle scanned from a file. The user selects the difficulty of the puzzle from "easy", "medium", and "difficult" to play the sudoku puzzle. 
+
+Sudoku puzzle
+
+ 
+ ## Dependency and Installation Instructions
+ This program reguires Java, JavaFX, Geany (IDE).
+ 
+ ## Instructions on configuration and execution of your project
+
+ ## Sample output (images appreciated)
+
+### A description of your repository and overall software design
+Algorithm
+  1. Select the difficulty of the sudoku puzzle from easy, medium, and difficult.
+  2. Scanner imports a sudoku text file into a 2 dimensional array.
+  3. Present the 2 D array of text fields.
+  4. User enters integer inside the array presented in the GUI.
+  5. The user input is stored inside the text box.
+  6. If the user enters non integer, the text box changes color.
+  7. Game completes when the user enters all of the input inside the grid.
+  8. User innitiates whether to play the game again.
+ 
+ ## Citations, Challenges.
+ 
+ * Inspiration of using an array to scan input.
+ * https://www.tutorialspoint.com/How-to-read-data-from-scanner-to-an-array-in-java
+ *  Learning to use GUI to create a game board.
+ * https://www.youtube.com/watch?v=QjuytZhQYo8&t=317s
+ * 	Inspiration of a code on creating a grid and checking for validity from Emory University Computer Scicne
+ * http://www.mathcs.emory.edu/~lxiong/cs170/share/code/chapter6/Sudoku.java.html
+ * Files.java I incorporated the scanner object to output a file 2D array of sudoku file. I gained inspiration from student.java and studentDirectory.java from Professor Adrian Veliz's class. 
+ 
+## Project Requirements 
 
 Please use this repository to submit your Final Project, the requirements for which are listed below. You may assist your fellow students but do NOT share answers/code. Additionally, this repo contains demo code that may help you complete your Final Project.
 
 Please delete the terminal and GUI directories and update the yml file by your last commit.
-
-## Project Requirements
-
 - A well documented and useful README.md including
   - A description of your project
   -   This is sudoku puzzle generator on a systems console. 
   - Dependency and installation instructions **excluding Geany, Git, Java, JavaFX, and ANSI/Unicode support**
-  -   To run the project, Geany and Java needs to be installed.
-  -   To install Geany:
-        Windows and Mac
-
-        Visit https://www.geany.org/download/releases/ (Links to an external site.) and select the installer for your platform
-        Linux
-
-        While the above should work, I prefer
-
-        sudo apt install geany yaru-theme-icon
-        
-       To install Java:
-       
-        Windows and Mac
-
-        Visit https://www.oracle.com/java/technologies/javase-jdk16-downloads.html (Links to an external site.) to download the             installer for your Operating System.
-        Linux
-
-        The above should work but I prefer running the following in a terminal:
-
-        sudo apt install openjdk-16-jdk
         
   - Instructions on configuration and execution of your project
   -     
