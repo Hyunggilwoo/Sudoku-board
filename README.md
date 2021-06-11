@@ -33,3 +33,4 @@ Algorithm
  * Files.java I incorporated the scanner object to output a file 2D array of sudoku file. I gained inspiration from student.java and studentDirectory.java from Professor Adrian Veliz's class.
  * Learned to use TextArea in Javafx. http://tutorials.jenkov.com/javafx/textarea.html
  * Learned Javafx commands from this tutorial. https://www.youtube.com/watch?v=QjuytZhQYo8
+ * Learned that laveling the size of the array as final int is a good idea. https://medium.com/javarevisited/build-a-sudoku-solver-in-java-part-1-c308bd511481 
