@@ -7,7 +7,7 @@ Sudoku puzzle
 
  
  ## Dependency and Installation Instructions
- This program reguires Java, JavaFX, Geany (IDE).
+ This program reguires a Geany, Java, and JavaFX.
  
  ## Instructions on configuration and execution of your project
 
@@ -24,15 +24,7 @@ Algorithm
   7. Game completes when the user enters all of the input inside the grid.
   8. User innitiates whether to play the game again.
  
- ## Citations, Challenges.
  
- * Inspiration of using an array to scan input.
- * https://www.tutorialspoint.com/How-to-read-data-from-scanner-to-an-array-in-java
- *  Learning to use GUI to create a game board.
- * https://www.youtube.com/watch?v=QjuytZhQYo8&t=317s
- * 	Inspiration of a code on creating a grid and checking for validity from Emory University Computer Scicne
- * http://www.mathcs.emory.edu/~lxiong/cs170/share/code/chapter6/Sudoku.java.html
- * Files.java I incorporated the scanner object to output a file 2D array of sudoku file. I gained inspiration from student.java and studentDirectory.java from Professor Adrian Veliz's class. 
  
 ## Project Requirements 
 
@@ -70,3 +62,14 @@ Please delete the terminal and GUI directories and update the yml file by your l
   - methods
   - blocks of functionality
   - cryptic individual lines
+ ## Citations, Challenges.
+ 
+ * Inspiration of using an array to scan input.
+ * https://www.tutorialspoint.com/How-to-read-data-from-scanner-to-an-array-in-java
+ *  Learning to use GUI to create a game board.
+ * https://www.youtube.com/watch?v=QjuytZhQYo8&t=317s
+ * 	Inspiration of a code on creating a grid and checking for validity from Emory University Computer Scicne
+ * http://www.mathcs.emory.edu/~lxiong/cs170/share/code/chapter6/Sudoku.java.html
+ * Files.java I incorporated the scanner object to output a file 2D array of sudoku file. I gained inspiration from student.java and studentDirectory.java from Professor Adrian Veliz's class.
+ * Learned to use TextArea in Javafx. http://tutorials.jenkov.com/javafx/textarea.html
+ * 
