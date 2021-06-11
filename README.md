@@ -1,17 +1,15 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=4823718&assignment_repo_type=AssignmentRepo)
 # FinalCS1 Sudoku Puzzle
 
-This is a sudoku puzzle that generates a puzzle scanned from a file. The user selects the difficulty of the puzzle from "easy", "medium", and "difficult" to play the sudoku puzzle. 
-
-Sudoku puzzle
+This is a sudoku puzzle that scans from a file and generates a string of 2 dimensional array on TextArea. The user selects the difficulty of the puzzle from "easy", "medium", and "difficult" to play the sudoku puzzle. 
 
  
- ## Dependency and Installation Instructions
- This program reguires a Geany, Java, and JavaFX.
+## Dependency and Installation Instructions
+This program reguires a Geany, Java, and JavaFX.
  
- ## Instructions on configuration and execution of your project
+## Instructions on configuration and execution of your project
 
- ## Sample output (images appreciated)
+## Sample output (images appreciated)
 
 ### A description of your repository and overall software design
 Algorithm
