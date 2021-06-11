@@ -10,6 +10,7 @@ This program reguires a Geany, Java, and JavaFX.
 ## Instructions on configuration and execution of your project
 
 ## Sample output (images appreciated)
+![Everyday Sudoku](https://user-images.githubusercontent.com/79225023/121628972-205a6200-ca2f-11eb-8255-610691dc5d32.PNG)
 
 ### A description of your repository and overall software design
 Algorithm
@@ -21,45 +22,6 @@ Algorithm
   6. If the user enters non integer, the text box changes color.
   7. Game completes when the user enters all of the input inside the grid.
   8. User innitiates whether to play the game again.
- 
- 
- 
-## Project Requirements 
-
-Please use this repository to submit your Final Project, the requirements for which are listed below. You may assist your fellow students but do NOT share answers/code. Additionally, this repo contains demo code that may help you complete your Final Project.
-
-Please delete the terminal and GUI directories and update the yml file by your last commit.
-- A well documented and useful README.md including
-  - A description of your project
-  -   This is sudoku puzzle generator on a systems console. 
-  - Dependency and installation instructions **excluding Geany, Git, Java, JavaFX, and ANSI/Unicode support**
-        
-  - Instructions on configuration and execution of your project
-  -     
-  - Sample output (images appreciated)
-  - 
-  - A description of your repository and overall software design 
-  - 
-  - Citations, Challenges, and anything else you feel is relevant
-      I had challenge in identifying the recursive algorithm to create a sudoku puzzle. 
-- A functioning project with a working interface (terminal or graphical) that uses most of the following
-  - Methods
-  - If/Else 
-  - Boolean logic
-  - Loops
-  - Files
-  - Try/Catch
-  -   Because sometimes the array runs into an error of running out of bounds, I use try and catch (arrayOutOfBounds)
-  - Arrays
-  -   Created a 2 dimensional arrays output on the terminal.
-  - Custom Objects and Inheritance
-  - Switch
-  - Enumerated types
-- Well documented source code including 
-  - classes
-  - methods
-  - blocks of functionality
-  - cryptic individual lines
  ## Citations, Challenges.
  
  * Inspiration of using an array to scan input.
