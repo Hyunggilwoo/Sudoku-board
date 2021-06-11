@@ -44,132 +44,59 @@ public class Main extends Application{
 	public static Button play, stop;
 	public static MediaPlayer mediaPlayer;// prevent GC from killing media
 	
-
+		Sudoku easy = new Sudoku(GRID_TO_SOLVE);
 	
-	@Override
-	public void start(Stage primaryStage) throws Exception {
-
-		
-		// actually show the gui
-		primaryStage.setTitle("GUI Demo Code");
-		primaryStage.setScene(new Scene(createContent()));
-		primaryStage.show();
-	}
-	
-	private static final int NUM_OF_ROWS = 8;
-	private static final int NUM_PER_ROW = 4;
-	private Tile selected = null;
-	
-	private Parent createContent(){
-			Pane root = new Pane();
-			root.setPrefSize(600,600);
+		@Override
+		public void start(Stage primaryStage) throws Exception {
+			
+			primaryStage.setTitle("Everyday Sudoku");
 			
 			// I am trying to set 2 D array indexes match into the each tile.
 			// sudoku parameter is int [][]
-			Sudoku easy = new Sudoku(GRID_TO_SOLVE);
-			// sudoku 
 			
-			List<Tile> tiles = new ArrayList<>();
-			for(int i=0; i < NUM_OF_ROWS; i++) {
-				
-				tiles.add(new Tile(String.valueOf(n)));
-				tiles.add(new Tile(String.valueOf(n)));
-				n++;
+			// sudoku be scanned in each textField 
+			TextArea textArea = new TextArea();
+			textArea.setText(easy.toString());
 			
-			}
+			// actually show the gui
+			VBox vbox = new VBox(textArea);
 			
-			Collections.shuffle(tiles);
+			Scene scene = new Scene(vbox, 1200, 800);
 			
-			for (int i = 0; i <tiles.size(); i++){
-				Tile tile = tiles.get(i);
-				tile.setTranslateX(50 *(i % NUM_PER_ROW));
-				tile.setTranslateY(50 *(i / NUM_PER_ROW));
-				root.getChildren().add(tile);
-			}
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		}
+		
+
+
+		
+		private Parent createContent(){
+			Pane root = new Pane();
+			root.setPrefSize(600,600);
+			
+
+			
 			return root;
-	}
-	
-		private class Tile extends StackPane {
-		
-		private Text text = new Text();
-		
-		public Tile(String value) {
-			Rectangle border = new Rectangle(50,50);
-			border.setFill(null);
-			border.setStroke(Color.BLACK);
-			
-			text.setText(value);
-			text.setFont(Font.font(30));
-			
-
-			getChildren().addAll(border, text);
-			
-			setOnMouseClicked(event -> {
-				if(isOpen())
-					return;
-					
-				if (selected == null) {
-					selected = this;
-					open(()-> {}); // this calls on runnable 
-				} else {
-					open(() -> {
-								if (!hasSameValue(selected)) {
-									selected.close();
-									this.close();
-								}
-								
-								selected = null;
-					});
-				}
-			});
-			
-			close();
-		}
-		
-		public boolean isOpen() {
-			return text.getOpacity() == 1;
-		}
-		
-		public void open(Runnable action){
-			FadeTransition ft = new FadeTransition(Duration.seconds(0.5), text);
-			ft.setToValue(1);
-			ft.setOnFinished(e -> action.run());
-			ft.play();
-		}
-		
-		public void close(){
-			
-			FadeTransition ft = new FadeTransition(Duration.seconds(0.5), text);
-			ft.setToValue(0);
-			ft.play();
-		}
-		
-		public boolean hasSameValue(Tile other) {
-			return text.getText().equals(other.text.getText()); // this returns true if the one selected tile equals the other selected tile
 		}
 
-	}
-
-	
-
-	public static int[][] GRID_TO_SOLVE = {
+		public static int[][] GRID_TO_SOLVE = {
+			
+				{9,0,0,1,0,0,0,0,5},
+				{0,0,5,0,9,0,2,0,1},
+				{8,0,0,0,4,0,0,0,0},
+				{0,0,0,0,8,0,0,0,0},
+				{0,0,0,7,0,0,0,0,0},
+				{0,0,0,0,2,6,0,0,9},
+				{2,0,0,3,0,0,0,0,6},
+				{0,0,0,2,0,0,9,0,0},
+				{0,0,1,9,0,4,5,7,0},
+		};
 		
-			{9,0,0,1,0,0,0,0,5},
-			{0,0,5,0,9,0,2,0,1},
-			{8,0,0,0,4,0,0,0,0},
-			{0,0,0,0,8,0,0,0,0},
-			{0,0,0,7,0,0,0,0,0},
-			{0,0,0,0,2,6,0,0,9},
-			{2,0,0,3,0,0,0,0,6},
-			{0,0,0,2,0,0,9,0,0},
-			{0,0,1,9,0,4,5,7,0},
-	};
-	
-	
-	public static void main(String[]args){
-	
-	Sudoku easy = new Sudoku(GRID_TO_SOLVE);
-	launch(args);
-	}
+		
+		public static void main(String[]args){
+		
+		//Sudoku easy = new Sudoku(GRID_TO_SOLVE);
+		launch(args);
+		}
 	
 }

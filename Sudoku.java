@@ -47,7 +47,7 @@ import java.util.*;
 */
 public class Sudoku {
 	
-		public static int[][] GRID_TO_SOLVE = {
+		private static int[][] GRID_TO_SOLVE = {
 		
 		
 			{9,0,0,1,0,0,0,0,5},
@@ -86,22 +86,36 @@ public class Sudoku {
 			Scanner scan =  new Scanner(puzzle); // Creates a scanner object scan that scans each row of index.
 			PrintStream out = System.out;
 
-			int [][] board = new int [SIZE][SIZE];
+			board = new int [SIZE][SIZE];
 			for(int row =0;row < SIZE;row++){ // Outer loop moves the scanner from top row to bottom row.
 				for(int col= 0;col <SIZE;col++){ // Inner loop moves the scanner from the beginning of index to the end of the index
 					Scanner parseLine = new Scanner(scan.next());
 					board[row][col] = parseLine.nextInt();
-				System.out.print(board[row][col] + " "); // Prints each number with space between them.
 				}
 				System.out.println();                    // When each row printed, cursor moves to the new line and prints.
 			}
-		//System.out.println(Arrays.toString(board)); // This prints a sudoku in array called directory.
+
 	}catch(FileNotFoundException fnfe){
 			System.out.println(fnfe.getCause());
 			System.out.println(fnfe.getMessage());
 		}catch(Exception e){
 			System.out.println(e.getMessage());
 		}
+	}
+	/* toString method is essential to print the array in TextArea in the Main.java.
+	 * 
+	 */ 
+	public String toString() {
+		String s = "";
+		
+		for(int[] array: board){
+			for(int cell: array){
+				s = s + (cell + " "); 
+			}
+			s = s + "\n";
+		}
+		
+		return s;
 	}
 
 	// we define a simple grid to solve. Grid is stored in a 2D Array
@@ -113,8 +127,8 @@ public class Sudoku {
 	
   public static void main(String[] args) {
 		Sudoku sudoku = new Sudoku(GRID_TO_SOLVE); //GRID_TO_SOLVE is the variable that needs to be solved.
-		System.out.println("Sudoku grid to solve");
-		//sudoku.display();
+
+
 		
 		
 	}
