@@ -13,27 +13,17 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.*;
 import javafx.scene.input.*;
 import javafx.scene.layout.*; //import layout.StackPane
-import javafx.scene.media.*;
+
 import javafx.scene.paint.*; // import paint.Color
 import javafx.scene.shape.*; // import shape.Rectangle, Circle
 import javafx.scene.text.*; // import text.Font, Text
 import javafx.stage.*; // Import stage.Stage
-import javafx.stage.FileChooser.*;
-import javafx.util.*;
 
-// My current sudoku class parameter is int [][].
+
+
 public class Main extends Application{
-	public static FileChooser fileChooser;
-	public static String imageFilePath;
-	public static Stage stage;
-	public static Scene scene;
-	public static boolean flag;
-	public static ImageView photoView;
-	public static Text keyText;
-	public static Circle circle;
-	public static Rectangle rect;
-	public static Button play, stop;
-	public static MediaPlayer mediaPlayer;// prevent GC from killing media
+
+	
 	
 	Sudoku easy = new Sudoku(GRID_TO_SOLVE);
 
@@ -41,28 +31,35 @@ public class Main extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		
 		primaryStage.setTitle("Everyday Sudoku");
-		
-		// I am trying to set 2 D array indexes match into the each tile.
-		// sudoku parameter is int [][]
-		
-		// sudoku be scanned in each textField 
+						
+		// sudoku be scanned in the textArea from fxml file 
 		TextArea textArea = new TextArea();
 		textArea.setText(easy.toString());
 		
-		// actually show the gui
-		VBox vbox = new VBox(textArea);
+		// Creating buttons
+		Button buttonE = new Button("Easy");
+		Button buttonM = new Button("Medium");
+		Button buttonD = new Button("Difficult");
+		
+		//Creating UserName and PassWord
+		TextField userName = new TextField();
+		TextField passWord = new TextField();
+		// actually show the gui fx
+		
+
+
+		VBox vbox = new VBox(textArea, buttonE, buttonM, buttonD, userName, passWord); // text area from a fx not fxml
 		Scene scene = new Scene(vbox, 1200, 800);
 		primaryStage.setScene(scene);
 		primaryStage.show();
-	}
-	//private Parent createContent(){
-		//Pane root = new Pane();
-		//root.setPrefSize(600,600);
-		
+				
 
 		
-		//return root;
-	//}
+		
+	}
+		
+
+
 	public static int[][] GRID_TO_SOLVE = {
 		
 			{9,0,0,1,0,0,0,0,5},
@@ -78,8 +75,8 @@ public class Main extends Application{
 		
 		
 	public static void main(String[]args){
-	//Sudoku easy = new Sudoku(GRID_TO_SOLVE);
-	launch(args);
+
+		launch(args);
 	}
 	
 }
