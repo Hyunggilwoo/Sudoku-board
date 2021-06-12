@@ -1,7 +1,7 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=4823718&assignment_repo_type=AssignmentRepo)
 # FinalCS1 Sudoku Puzzle
 
-This is a sudoku puzzle that scans from a file and generates a string of 2 dimensional array on TextArea. The user selects the difficulty of the puzzle from "easy", "medium", and "difficult" to play the sudoku puzzle. My goal was to incorporate the fundamentals of Java Programming, including methods, If/Else statement, Boolean Logic, Loops, Files, try/catch method, arrays, creating custom objects, switch, and enumerated objects. 
+This is a sudoku puzzle that scans from a file and generates a string of 2 dimensional array on TextArea. The user enters a number on a terminal to choose the difficulty of the puzzle from "easy", "medium", and "difficult" to play the sudoku puzzle. My goal was to incorporate the fundamentals of Java Programming, including methods, If/Else statement, Boolean Logic, Loops, Files, try/catch method, arrays, creating custom objects, switch, and enumerated objects. 
 
  
 ## Dependency and Installation Instructions
@@ -13,6 +13,10 @@ This program reguires a Geany, Java, and JavaFX.
 ![Everyday Sudoku](https://user-images.githubusercontent.com/79225023/121628972-205a6200-ca2f-11eb-8255-610691dc5d32.PNG)
 
 ### A description of your repository and overall software design
+There is a Sudoku class that accepts a textfile and the setBoard() method generates a 2 D array out of the text.
+
+I attempted to keep the sudoku class accept the text file rather than the Main.java.
+It mainly uses for loop and if/else statement and boolean loogic checks the condition of the user input.
 Algorithm
   1. Select the difficulty of the sudoku puzzle from easy, medium, and difficult.
   2. Scanner imports a sudoku text file into a 2 dimensional array.
@@ -22,8 +26,13 @@ Algorithm
   6. If the user enters non integer, the text box changes color.
   7. Game completes when the user enters all of the input inside the grid.
   8. User innitiates whether to play the game again.
+
+
  ## Citations, Challenges.
- 
+ Challenges
+ I had trouble incorporating Java FXML. If I could use FXML, I believe the GUI would have better appeal.
+ Currently, the sudoku puzzle is generated as a String on text Area, so the printed numbers that are hint to the user can be deleted.
+ While I have the user user to choose from files by entering integer in the command terminal, the if either non-integers are entered, the setBoard() exits due to null values.
  * Inspiration of using an array to scan input.
  * https://www.tutorialspoint.com/How-to-read-data-from-scanner-to-an-array-in-java
  *  Learning to use GUI to create a game board.
@@ -34,4 +43,5 @@ Algorithm
  * Learned to use TextArea in Javafx. http://tutorials.jenkov.com/javafx/textarea.html
  * Learned Javafx commands from this tutorial. https://www.youtube.com/watch?v=QjuytZhQYo8
  * Learned that laveling the size of the array as final int is a good idea. https://medium.com/javarevisited/build-a-sudoku-solver-in-java-part-1-c308bd511481
- * Professor Veliz for recommending me to use the toString() method for the sudoku to print the array. 
+ * Professor Veliz for recommending me to use the toString() method for the sudoku to print the array.
+ * https://stackoverflow.com/questions/21055007/reading-multiple-files-java
